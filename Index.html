@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BSL - Neon Futurista</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilo geral do corpo */
+        body {
+            font-family: 'Orbitron', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #1b1b2f, #162447);
+            color: #fff;
+            overflow: hidden;
+        }
+
+        /* Estilo da imagem no topo */
+        .top-image {
+            width: 150px;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.5), 0 0 25px rgba(255, 0, 255, 0.5);
+        }
+
+        /* Título principal */
+        h1 {
+            font-size: 3.5rem;
+            text-transform: uppercase;
+            color: #00ffff;
+            text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ccff;
+        }
+
+        /* Subtítulo */
+        h2 {
+            font-size: 2rem;
+            color: #ff00ff;
+            text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #cc00cc;
+            margin-bottom: 40px;
+        }
+
+        /* Contêiner das caixas de texto */
+        .container {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        /* Estilo das caixas de texto */
+        .box {
+            padding: 20px;
+            width: 45%;
+            background: rgba(27, 27, 47, 0.7);
+            border: 2px solid;
+            border-image: linear-gradient(45deg, #00ffff, #ff00ff) 1;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.5), 0 0 30px rgba(255, 0, 255, 0.5);
+            color: #fff;
+            font-size: 1.2rem;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        /* Efeito ao passar o mouse sobre as caixas */
+        .box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 25px rgba(0, 255, 255, 0.7), 0 0 40px rgba(255, 0, 255, 0.7);
+        }
+    </style>
+</head>
+<body>
+    <!-- Imagem no topo -->
+    <img src="BSL Neon.png" alt="BSL Neon" class="top-image">
+    <h1>BSL</h1>
+    <h2>Brasil Sem Limites</h2>
+    <div class="container">
+        <a href="pagina 2.html" class="box">A comunidade da cultura pop, nerd e otaku.</a>
+        <a href="https://discord.gg/bsl" class="box">Eventos dentro de games e no Discord, sorteios e festas.</a>
+    </div>
+</body>
+</html>

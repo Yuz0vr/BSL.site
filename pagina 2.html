@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envio de Arquivos - BSL</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Orbitron', sans-serif;
+            background: linear-gradient(135deg, #1b1b2f, #162447);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3rem;
+            color: #00ffff;
+            text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ccff;
+        }
+        .container {
+            margin-top: 30px;
+        }
+        .upload-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+        }
+        input[type="file"] {
+            background-color: #1b1b2f;
+            border: 2px solid #ff00ff;
+            padding: 10px;
+            color: white;
+        }
+        textarea {
+            width: 300px;
+            height: 100px;
+            padding: 10px;
+            background-color: #1b1b2f;
+            border: 2px solid #ff00ff;
+            color: white;
+        }
+        .submit-btn {
+            background-color: #00ffff;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            color: black;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .submit-btn:hover {
+            background-color: #ff00ff;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Envio de Arquivos</h1>
+    <div class="container">
+        <form action="#" method="POST">
+            <div class="upload-container">
+                <label for="file1">Anexar Imagem 1:</label>
+                <input type="file" id="file1" name="file1" accept="image/*">
+                <label for="file2">Anexar Imagem 2:</label>
+                <input type="file" id="file2" name="file2" accept="image/*">
+                <label for="file3">Anexar Imagem 3:</label>
+                <input type="file" id="file3" name="file3" accept="image/*">
+                <label for="file4">Anexar Imagem 4:</label>
+                <input type="file" id="file4" name="file4" accept="image/*">
+            </div>
+            <div>
+                <label for="text1">Texto 1:</label>
+                <textarea id="text1" name="text1"></textarea>
+            </div>
+            <div>
+                <label for="text2">Texto 2:</label>
+                <textarea id="text2" name="text2"></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
